@@ -42,9 +42,24 @@ $information =  [
 
 
 
-foreach ($information as $key => $value) {
-    echo $key ."---". $value['Department']." AGE : ".$value['age']."Phone -> :". $value['phone']['Emargency']  ."<br>";
-}
+echo "<table border='2px' cellpadding='10px' cellpacing='0px'>
+    <tr>
+        <td>Name</td>
+        <td>Department</td>
+        <td>Age</td>
+        <td>Emargency</td>
+        <td>Personal</td>
+        <td>Father</td>
+        <td>Mother</td>
+    </tr>
+
+
+    ";
+
+    foreach ($information as $key => $value) {
+        echo "<tr><td>$key</td>"." <td>".$value['Department']."</td>"."<td>".$value['age']."</td>"."<td>".$value['phone']['Emargency']."</td>"."<td>".$value['phone']['personal']."</td>"."<td>". $value['phone']['parents']['father']."</td>"."<td>".$value['phone']['parents']['mother']."</td>"."</tr><br>";
+    }
+    echo "</table>";
 
 
 
