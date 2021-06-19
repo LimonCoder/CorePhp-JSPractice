@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form  method="post" action="">
+  Name: <input type="text" name="fname">
+  <input type="submit">
+</form>
+
+<?php
+
+echo"<pre>";
+print_r($_SERVER);
+
+
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     // collect value of input field
+//     $name = $_POST['fname'];
+//     if (empty($name)) {
+//         echo "Name is empty";
+//     } else {
+//         echo $name;
+//     }
+// }
+?>
+
+</body>
+</html>
