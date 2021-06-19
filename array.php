@@ -40,10 +40,8 @@ $information =  [
     ]
 ]; 
 
-
-
 foreach ($information as $key => $value) {
-    echo $key ."---". $value['Department']." AGE : ".$value['age']."Phone -> :". $value['phone']['Emargency']  ."<br>";
+    echo $key;
 }
 
 
